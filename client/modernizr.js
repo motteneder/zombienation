@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Modernizr JavaScript library 1.5
  * http://www.modernizr.com/
  *

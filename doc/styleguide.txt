@@ -1,3 +1,7 @@
+﻿All files:
+  * Encode UTF-8!
+  * Use Unix like ends!
+
 CSS:
   * Indent using 4 spaces, not tabs.
   * Group related definitions together.
