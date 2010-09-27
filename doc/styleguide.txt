@@ -1,0 +1,25 @@
+CSS:
+  * Indent using 4 spaces, not tabs.
+  * Group related definitions together.
+  * Put an empty line between unrelated blocks of definitions.
+  * CSS document structure:
+    - HTML element definitions.
+    - .class definitions.
+    - #id definitions.
+
+HTML:
+  * Use lowercase elements and attributes.
+  * Indent using 4 spaces, not tabs.
+  * Use empty lines to seperate unrelated sections. Use common sense.
+  * Use camelCase IDs.
+  * Keep the JavaScript for an element's events in the JavaScript files. Don't
+    use attributes like onclick="herpDerp();".
+
+Documents:
+  * Like this file, when plain text.
+  * Include date and attendees in meeting transcripts.
+  * It's rude to modify other people's documents, unless the document's purpose
+    requires you to do so.
+
+Javascript:
+  http://javascript.crockford.com/code.html

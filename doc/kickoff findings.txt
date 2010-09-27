@@ -1,0 +1,92 @@
+﻿This file contains the essential findings of the kickoff meeting on 2010/09/27.
+Attendees: howard, motteneder
+
+Working title of the game: Zombienation
+
+Game modes:
+  * Travel from one place to another.
+  * Fortify a given place and defend it for a certain period of time.
+  * Rebuild: Select a place, fortify it, and create a system to provide the
+    survivors with supplies and security.
+  * Campaign: Combines the above game modes and variations of them with a
+    continuous story.
+  Rebuild and Campaign put a heavier focus on managing ressources than the
+  other game modes.
+  All modes should work for a single player as well as multiple players, the
+  main difference being that the other survivors are controlled by AI in single
+  player mode, whereas other players may control the remaining survivors in
+  multiplayer mode.
+
+Features:
+  The following list of intended features does not represent set-in-stone goals
+  of the project. Features may be added or removed any time.
+  * Savegames: Necessary for long game modes such as Rebuild and Campaign. In
+    SP games, the save file may be saved on the client's computer in whatever
+    way we decide to use to store such information persistently. MP savegames
+    should remain saved on the server to prevent, or, alternatively, any player
+    may distribute one of his savegames to others who want to join.
+  * Action view and management view: Different views for different purposes.
+    Action view is intended for letting the characters run around, fight the
+    undead, and look for items. Management view provides an overview of the
+    whole map (or at least the discovered parts), which is ideal for getting
+    orientation, reviewing your goals, and ordering others to do something.
+  * Items: Should be placed randomly, but within certain constraints. For
+    example, it's plausible to find a chainsaw in the garage, but not in the
+    living room. For early versions, however, static placing of items on the
+    map should suffice. A characters carrying capacity should be limited, but
+    extendable with carrying equipment, such as backpacks or tool belts. The
+    amount of carried items should also influence agility. When finding an
+    item, it should be possible to choose hiding it from other survivors (as
+    opposed to claiming an item for the group). Using the item in front of
+    others should affect your trustworthiness, though.
+  * Music: Tracks licensed for free re-use would be ideal. As a low-priority
+    improvement of this feature, music could be selected to match the current
+    atmosphere in the game, like fast aggressive songs for combat situations.
+  * Characters: The player characters and NPCs should have some attributes like
+    strength, agility, intelligence, trustworthiness, loyalty... oh wait, this
+    sounds too much like RPG. But some attributes would be really useful to
+    provide richer gameplay. Those attributes could be generated randomly for
+    every game, or every user can create a character to use every time.
+  * Parameterized zombies: Similar to characters, zombies also should have
+    certain attributes which are randomly generated at the beginning of the
+    game/campaign, so that the player(s) have to research them before knowing
+    how they act, providing more realistic zombie apocalypse conditions.
+  * Score system: Killing zombies, fortifying, and surviving should be rewarded
+    with points. We could also introduce achievements for certain deeds. There
+    should be an online ranking with the top players.
+  * Communication via chat: With messages appearing as speech bubbles above the
+    character.
+  * Compatibility with mobile devices: Such as iOS or Android devices. This
+    means, essentially, that the game should not require too high resolutions
+    and should be touch-control friendy.
+  * [low priority]Particle engine: For smoke/fires, but still subject to
+    research.
+  * [possible]Times of day: Probably best doable when using SVG for the
+    game graphics.
+  * [possible]Offline mode: SP only, of course.
+
+Possibly used technologies:
+  * <canvas>, possibly with mootools canvas library.
+  * node.js or WebSocket for communication with the server/other players.
+  * WebStorage or Web SQL Databases for storing frequently used ressources on
+    the user side for quicker game loading.
+  Some of the technologies above still need some experimenting before we can
+  decide which to use.
+
+Goals:
+  Divided into steps we want to take in this sequence.
+  * Displaying and animating stuff, using <canvas>.
+  * Positioning objects and moving the player over a map.
+  * Path finding for anything that moves around.
+  * AI for zombies and NPCs.
+  --> This is how far we want to get till the end of the year.
+  * Multiplayer mode.
+  * Collecting and managing items.
+  * Using weapons and items.
+  * Game mode logic.
+  * Savegames.
+  * Campaign.
+
+Problems:
+  * Graphics: No useful sources confirmed so far. We need someone who is good
+    with CGs.
