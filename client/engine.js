@@ -9,7 +9,8 @@
 var preloadable = new Hash({
     // for testing purposes
     test: 'images/test.png',
-    tile: 'images/tile.png'
+    tile: 'images/tile.png',
+    empty: 'images/empty.png'
 });
 
 // Initialize after loading page.
@@ -35,6 +36,7 @@ var ZEngine = new Class({
     initialize: function (canvas) {
         // Initialize MCL with the base canvas.
         CANVAS.init({canvasElement: canvas, enableMouse: true});
+        this.context = CANVAS.ctx;
         // Store all assets centrally.
         this.assets = new Hash();
     },
